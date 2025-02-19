@@ -1,0 +1,24 @@
+{
+  "name": "refer-and-earn-server",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.10.0",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "googleapis": "^144.0.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.10.0",
+    "react-icons": "^5.4.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "prisma": "^5.10.0"
+  }
+}
