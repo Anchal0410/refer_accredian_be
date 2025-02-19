@@ -53,11 +53,13 @@ const createReferral = async (req, res) => {
     } catch (error) {
       console.error('Error in createReferral:', error);
       res.status(500).json({
+        error: error,
         success: false,
         message: 'Error creating referral'
       });
     }
   };  
+
 
 // Get referral status
 const getReferralStatus = async (req, res) => {
