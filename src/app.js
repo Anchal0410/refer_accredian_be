@@ -6,7 +6,11 @@ const referralRoutes = require('./routes/referral.routes');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: ['https://refer-accredian-fe.vercel.app/', 'http://localhost:5173'],
+    methods: ['GET', 'POST', 'PATCH'],
+    credentials: true
+  }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
